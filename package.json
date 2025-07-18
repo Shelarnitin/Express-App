@@ -1,0 +1,19 @@
+{
+  "name": "tea-manager",
+  "version": "1.0.0",
+  "description": "a simple manager for different tea",
+  "keywords": [
+    "express",
+    "tea"
+  ],
+  "license": "ISC",
+  "author": "Nitin shelar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
