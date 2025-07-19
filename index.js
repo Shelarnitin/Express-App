@@ -9,6 +9,7 @@ let nextId = 1
 
 //Add a new tea
 app.post('/teas', (req, res) => {
+    console.log("POST")
     const {name,price} = req.body
     const newTea = {id: nextId++, name, price}
     teaData.push(newTea)
@@ -44,6 +45,8 @@ app.put('/teas/:id', (req, res) => {
 
 //Delete tea
 app.delete('/teas/:id', (req, res) => {
+    console.log("Delete")
+    console.log(req.params.id)
     const index = teaData.findIndex(t => t.id === parseInt(req.params.id))
     if(index === -1) {
         return res.status(404).send('tea not found')
